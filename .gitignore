@@ -1,0 +1,19 @@
+node_modules
+.dist
+**/dist
+.DS_Store
+.out
+
+# logs
+logs
+*.log
+
+# editor
+.vscode
+
+# build artifacts
+out/
+gallery/assets/
+.pnpm-store/
+*.log
+*.pid

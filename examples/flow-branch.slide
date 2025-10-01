@@ -1,0 +1,6 @@
+flow title: Branch/Merge
+path: A -> B -> C
+path: B -> D -> E
+path: C -> F
+path: D -> F
+forbid: B -X-> F

@@ -1,0 +1,8 @@
+matrix title: RACI
+rows: PM, Eng, QA
+cols: 設計, 実装, テスト
+cell: row=1, col=1, label="A"
+cell: row=1, col=2, label="R"
+cell: row=2, col=2, label="R"
+cell: row=2, col=3, label="C"
+cell: row=3, col=3, label="I"

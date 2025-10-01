@@ -1,0 +1,4 @@
+flow title: Gridish
+path: N1 -> N2 -> N3 -> N4
+path: N1 -> M2 -> M3 -> N4
+path: N1 -> P2 -> N3

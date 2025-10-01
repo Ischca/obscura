@@ -1,0 +1,21 @@
+{
+  "name": "slide-development-kit",
+  "private": true,
+  "packageManager": "pnpm@9",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "gallery:render": "node scripts/render-examples.js",
+    "gallery:build": "node scripts/build-gallery.js",
+    "gallery:serve": "node scripts/serve-gallery.js",
+    "gallery": "pnpm -r build && pnpm gallery:render && pnpm gallery:build && pnpm gallery:serve"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2"
+  }
+}

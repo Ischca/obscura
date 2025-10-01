@@ -1,0 +1,94 @@
+[
+  {
+    "id": "basic",
+    "title": "basic"
+  },
+  {
+    "id": "blueprint-basic",
+    "title": "blueprint-basic"
+  },
+  {
+    "id": "board-dodont",
+    "title": "board-dodont"
+  },
+  {
+    "id": "boundary-basic",
+    "title": "boundary-basic"
+  },
+  {
+    "id": "cycle-basic",
+    "title": "cycle-basic"
+  },
+  {
+    "id": "decision-basic",
+    "title": "decision-basic"
+  },
+  {
+    "id": "flow-backedge",
+    "title": "flow-backedge"
+  },
+  {
+    "id": "flow-branch",
+    "title": "flow-branch"
+  },
+  {
+    "id": "flow-grid",
+    "title": "flow-grid"
+  },
+  {
+    "id": "flow-long-labels",
+    "title": "flow-long-labels"
+  },
+  {
+    "id": "flow-multi",
+    "title": "flow-multi"
+  },
+  {
+    "id": "funnel-basic",
+    "title": "funnel-basic"
+  },
+  {
+    "id": "guardrail-basic",
+    "title": "guardrail-basic"
+  },
+  {
+    "id": "heatmap-basic",
+    "title": "heatmap-basic"
+  },
+  {
+    "id": "hierarchy-basic",
+    "title": "hierarchy-basic"
+  },
+  {
+    "id": "journey-basic",
+    "title": "journey-basic"
+  },
+  {
+    "id": "matrix-raci",
+    "title": "matrix-raci"
+  },
+  {
+    "id": "okr-basic",
+    "title": "okr-basic"
+  },
+  {
+    "id": "quadrant-basic",
+    "title": "quadrant-basic"
+  },
+  {
+    "id": "sipoc-basic",
+    "title": "sipoc-basic"
+  },
+  {
+    "id": "swimlane-basic",
+    "title": "swimlane-basic"
+  },
+  {
+    "id": "timeline-roadmap",
+    "title": "timeline-roadmap"
+  },
+  {
+    "id": "venn-2set",
+    "title": "venn-2set"
+  }
+]

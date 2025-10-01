@@ -1,0 +1,7 @@
+swimlane title: 役割別タスク
+lanes: PM, Eng, QA
+item: lane=1, label="要件定義", time=0
+item: lane=2, label="実装", time=1
+item: lane=3, label="テスト", time=2
+item: lane=2, label="修正対応", time=3
+dep: 実装 -> 修正対応

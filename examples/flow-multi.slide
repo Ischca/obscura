@@ -1,0 +1,4 @@
+flow title: Multiple Paths
+path: 入力 -> 検証 -> 出力
+path: 入力 -> 保存 -> 出力
+path: 入力 -> ログ -> 出力

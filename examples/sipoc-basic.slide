@@ -1,0 +1,7 @@
+sipoc title: SIPOC Example
+supplier: 社外パートナー, SaaSプロバイダ
+input: 顧客要望, データ
+process: 設計, 実装, テスト
+output: 成果物, レポート
+customer: 顧客, 社内運用
+note: process="主要工程"

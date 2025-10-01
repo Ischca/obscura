@@ -1,0 +1,5 @@
+journey title: 顧客旅程
+lanes: Awareness, Consideration, Purchase
+item: lane=1, label="広告閲覧", time=0
+item: lane=2, label="比較検討", time=1
+item: lane=3, label="購入", time=2

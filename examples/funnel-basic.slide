@@ -1,0 +1,5 @@
+funnel title: Conversion Funnel
+stage: label="訪問", value=10000
+stage: label="登録", value=3200
+stage: label="利用", value=1200
+stage: label="有料化", value=300

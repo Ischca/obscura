@@ -1,0 +1,19 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Web Demo</title></head><body>
+<textarea id="dsl" rows="8" cols="80">flow title: demo</textarea>
+<pre id="out"></pre>
+<script type="module">
+import { parse } from '/packages/parser/src/index.ts'
+import { layout } from '/packages/layout-elk/src/index.ts'
+import { renderSVG } from '/packages/render-svg/src/index.ts'
+const dsl = document.querySelector('#dsl')
+const out = document.querySelector('#out')
+dsl.addEventListener('input', () => {
+  try {
+    const ast = parse(dsl.value)
+    const g = layout(ast)
+    out.textContent = renderSVG(g)
+  } catch (e) { out.textContent = String(e) }
+})
+</script>
+</body></html>

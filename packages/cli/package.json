@@ -1,0 +1,18 @@
+{
+  "name": "obscura",
+  "version": "0.0.0",
+  "type": "module",
+  "bin": {
+    "obscura": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run -r"
+  },
+  "dependencies": {
+    "@obscura/core": "workspace:*",
+    "@obscura/parser": "workspace:*",
+    "@obscura/layout-elk": "workspace:*",
+    "@obscura/render-svg": "workspace:*"
+  }
+}

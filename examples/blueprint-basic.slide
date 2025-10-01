@@ -1,0 +1,6 @@
+blueprint title: サービス設計
+lanes: Frontstage, Backstage, Support
+item: lane=1, label="Web申込", time=0
+item: lane=2, label="DB登録", time=1
+item: lane=3, label="ヘルプ対応", time=2
+dep: Web申込 -> DB登録

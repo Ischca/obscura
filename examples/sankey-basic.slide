@@ -1,0 +1,6 @@
+sankey title: 採用率の流量
+edge: 候補 -> 採用, weight=0.6
+edge: 候補 -> 不採用, weight=0.4
+edge: 採用 -> PR, weight=0.9
+edge: PR -> 合格, weight=0.8
+note: at=PR text="自動反映なし"

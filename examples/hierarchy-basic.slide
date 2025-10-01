@@ -1,0 +1,6 @@
+hierarchy title: Org
+edge: 会社 -> 事業部A
+edge: 会社 -> 事業部B
+edge: 事業部A -> チームA1
+edge: 事業部A -> チームA2
+edge: 事業部B -> チームB1

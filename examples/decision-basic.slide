@@ -1,0 +1,4 @@
+decision title: 承認フロー
+edge: 申請 -> 条件A
+edge: 条件A -> 承認
+edge: 条件A -> 差戻し

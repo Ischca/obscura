@@ -1,0 +1,6 @@
+board title: Do & Don't
+cols: Do, Don't
+item: col=1, label="自動テストを追加する"
+item: col=1, label="レビュー結果を反映する"
+item: col=2, label="手作業のリリース"
+item: col=2, label="未合意の仕様変更"

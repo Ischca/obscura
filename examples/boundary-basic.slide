@@ -1,0 +1,5 @@
+boundary title: データ境界
+internal { コード アセット: "イラスト/顧客" AI プロキシ }
+external { 許可API }
+allow: AI -> コード, AI -> プロキシ, プロキシ -> 許可API
+forbid: AI -X-> アセット

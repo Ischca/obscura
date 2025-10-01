@@ -1,0 +1,6 @@
+heatmap title: リスク
+rows: 低, 中, 高
+cols: まれ, 時々, よくある
+cell: row=3, col=3, label="障害", level=5
+cell: row=2, col=3, label="不具合", level=4
+cell: row=1, col=2, label="軽微", level=2
