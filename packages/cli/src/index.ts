@@ -8,7 +8,7 @@ import { renderSVG } from '@obscura/render-svg'
 async function main() {
   const args = process.argv.slice(2)
   if (args[0] !== 'build' || !args[1]) {
-    console.error('Usage: slide-diagram-cli build <input.slide> -o <output.svg>')
+    console.error('Usage: obscura build <input.slide> -o <output.svg>')
     process.exit(1)
   }
   const inputPath = resolve(process.cwd(), args[1])

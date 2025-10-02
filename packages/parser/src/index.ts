@@ -1,4 +1,4 @@
-import type { Diagram, Flow, Boundary, Guardrail, Matrix, Board, Timeline, Cycle, Venn, SIPOC, Swimlane, Hierarchy, Funnel, Journey, Blueprint, OKR, Decision, Quadrant, Heatmap, Fishbone, Sankey, Annotation, EdgeDef, NodeDef } from '@slide-diagram/core'
+import type { Diagram, Flow, Boundary, Guardrail, Matrix, Board, Timeline, Cycle, Venn, SIPOC, Swimlane, Hierarchy, Funnel, Journey, Blueprint, OKR, Decision, Quadrant, Heatmap, Fishbone, Sankey, Annotation, EdgeDef, NodeDef } from '@obscura/core'
 
 // Minimal parser for MVP:
 // - Detects diagram type from the first word

@@ -1,4 +1,4 @@
-import type { Diagram, Flow } from '@slide-diagram/core'
+import type { Diagram, Flow } from '@obscura/core'
 // Use elkjs as a dependency (UMD bundle). ESM default import yields constructor.
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore - elkjs provides a UMD bundle compatible with import default

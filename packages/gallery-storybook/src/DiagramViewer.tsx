@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 // Import workspace sources so Vite bundles them for the browser
 // (dynamic imports of dist paths can 404 under dev server)
-import { parse } from '../../parser/src/index.ts'
-import { layout } from '../../layout-elk/src/index.ts'
-import { renderSVG } from '../../render-svg/src/index.ts'
+import { parse } from '@obscura/parser'
+import { layout } from '@obscura/layout-elk'
+import { renderSVG } from '@obscura/render-svg'
 
 export function DiagramViewer({ dsl, width = 640, grid = false }: { dsl: string; width?: number; grid?: boolean }) {
   const [svg, setSvg] = useState<string>('')
