@@ -425,7 +425,7 @@ async function layoutHeatmap(hm: { rows: string[]; cols: string[]; cells: { row:
   const cell = 48
   const startX = 160
   const startY = 80
-  const fbNodes: { id: string; x: number; y: number; width: number; height: number }[] = []
+  const nodes: { id: string; x: number; y: number; width: number; height: number; shape?: 'rect'; fill?: string; fillOpacity?: number; stroke?: string }[] = []
   // headers
   hm.cols.forEach((c, j) => nodes.push({ id: c, x: startX + j * (cell + pad), y: startY - 40, width: cell, height: 28 }))
   hm.rows.forEach((r, i) => nodes.push({ id: r, x: startX - 140, y: startY + i * (cell + pad), width: 120, height: 28 }))
@@ -451,13 +451,13 @@ async function layoutFishbone(fb: { main: string; bones: { label: string; items?
   fb.bones.forEach((b: { label: string; items?: string[] }, i: number) => {
     const y = startY + angleY[i % angleY.length]
     fbNodes.push({ id: b.label, x: startX + 220, y: y - 20, width: 140, height: 40 })
-    (b.items || []).forEach((it: string, k: number) => {
+    ;(b.items || []).forEach((it: string, k: number) => {
       fbNodes.push({ id: it, x: startX + 380 + k * 140, y: y - 14, width: 120, height: 28 })
     })
   })
   // edges: main -> bone label -> items (straight segments)
   const fbEdges: { from: string; to: string; points: { x: number; y: number }[] }[] = []
-  fb.bones.forEach((b: { label: string; items?: string[] }, i: number) => {
+  fb.bones.forEach((b: { label: string; items?: string[] }) => {
     const boneNode = fbNodes.find((n: any) => n.id === b.label)
     const mainNode = fbNodes.find((n: any) => n.id === fb.main)
     if (mainNode && boneNode) {
@@ -466,7 +466,7 @@ async function layoutFishbone(fb: { main: string; bones: { label: string; items?
         { x: boneNode.x, y: boneNode.y + boneNode.height / 2 }
       ]})
     }
-    (b.items || []).forEach((it: string) => {
+    ;(b.items || []).forEach((it: string) => {
       const itemNode = fbNodes.find((n: any) => n.id === it)
       if (boneNode && itemNode) {
         fbEdges.push({ from: b.label, to: it, points: [
@@ -477,10 +477,10 @@ async function layoutFishbone(fb: { main: string; bones: { label: string; items?
     })
   })
   // annotations as sticky notes near target
-  (fb.annotations || []).forEach(a => {
+  ;(fb.annotations || []).forEach((a: { at: string; text: string }) => {
     const target = fbNodes.find(n => n.id === a.at)
     if (target) {
-      const ax = (target.x + target.width) + 12
+      const ax = target.x + target.width + 12
       const ay = target.y - 34
       fbNodes.push({ id: a.text, x: ax, y: ay, width: 160, height: 28, shape: 'rect' })
     }
@@ -508,7 +508,7 @@ async function layoutSankey(sk: { edges: { from: string; to: string; weight: num
     return { from: e.from, to: e.to, points: [p1, mid, p2], weight: e.weight }
   })
   // annotations for sankey
-  (sk.annotations || []).forEach(a => {
+  ;(sk.annotations || []).forEach((a: { at: string; text: string }) => {
     const target = nodes.find(n => n.id === a.at)
     if (target) {
       nodes.push({ id: a.text, x: target.x + target.width + 12, y: target.y - 34, width: 160, height: 28 })
