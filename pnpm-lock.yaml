@@ -17,16 +17,16 @@ importers:
 
   packages/cli:
     dependencies:
-      '@slide-diagram/core':
+      '@obscura/core':
         specifier: workspace:*
         version: link:../core
-      '@slide-diagram/layout-elk':
+      '@obscura/layout-elk':
         specifier: workspace:*
         version: link:../layout-elk
-      '@slide-diagram/parser':
+      '@obscura/parser':
         specifier: workspace:*
         version: link:../parser
-      '@slide-diagram/render-svg':
+      '@obscura/render-svg':
         specifier: workspace:*
         version: link:../render-svg
 
@@ -67,7 +67,7 @@ importers:
 
   packages/layout-elk:
     dependencies:
-      '@slide-diagram/core':
+      '@obscura/core':
         specifier: workspace:*
         version: link:../core
       elkjs:
@@ -76,13 +76,13 @@ importers:
 
   packages/parser:
     dependencies:
-      '@slide-diagram/core':
+      '@obscura/core':
         specifier: workspace:*
         version: link:../core
 
   packages/render-svg:
     dependencies:
-      '@slide-diagram/core':
+      '@obscura/core':
         specifier: workspace:*
         version: link:../core
 

@@ -33,7 +33,7 @@ jobs:
           cache: pnpm
 
       - name: Install
-        run: pnpm i --frozen-lockfile
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build workspace
         run: pnpm -r build
@@ -64,4 +64,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
