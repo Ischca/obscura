@@ -1,0 +1,40 @@
+import { Meta, Canvas } from '@storybook/blocks'
+import { DiagramViewer } from '../src/DiagramViewer'
+
+<Meta title="Welcome/Intro" />
+
+# Obscura
+
+From obscure to clear. Obscura turns concise DSL into auto‑laid out SVG diagrams for business slides.
+
+## Why
+- Declarative `.slide` DSL; no manual coordinates
+- ELK‑powered layered, orthogonal routing; stable layouts
+- Rich patterns: Flow, Boundary, Guardrail, Swimlane, Timeline, Matrix, Board, Venn, Heatmap, Cycle, Funnel, OKR/Hierarchy/Decision, SIPOC, Journey/Blueprint, Fishbone, Sankey
+- SVG first; review here with Storybook Controls
+
+## Try It
+
+Edit the DSL in place using Controls on any story. A minimal Flow:
+
+```text
+flow title: Suggest Workflow
+path: Developer -> Suggest -> Commit -> PR -> ReviewCI
+forbid: Suggest -X-> PR
+```
+
+<Canvas>
+  <DiagramViewer dsl={`flow title: Suggest Workflow\npath: Developer -> Suggest -> Commit -> PR -> ReviewCI\nforbid: Suggest -X-> PR`} />
+  </Canvas>
+
+## Navigation
+- Examples → Basic/Boundary/Venn/All
+- Diagrams → Flow / Boundary / Matrix / Misc / Compare
+
+Quick links:
+- [Examples/Basic](?path=/story/diagrams-examples--basic)
+- [Flow/Branch](?path=/story/diagrams-flow--branch)
+- [Boundary/Basic](?path=/story/diagrams-boundary--basic)
+- [Matrix/RACI](?path=/story/diagrams-matrix--raci)
+- [Compare/Two Up Flow](?path=/story/diagrams-compare--two-up-flow)
+
